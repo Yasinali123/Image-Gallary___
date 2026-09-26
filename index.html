@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Showcase Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="bg-glow"></div>
+    <div class="page-noise"></div>
+
+    <nav class="navbar stagger-in">
+        <a href="#" class="nav-brand magnetic" data-magnetic>Gallery.</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active magnetic" data-magnetic>Home</a></li>
+            <li><a href="collection.html" class="magnetic" data-magnetic>Collection</a></li>
+            <li><a href="about.html" class="magnetic" data-magnetic>About</a></li>
+            <li><a href="contact.html" class="magnetic" data-magnetic>Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle magnetic" data-magnetic id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="display: none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <button class="nav-cta magnetic" data-magnetic>Subscribe</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-3d-container">
+            <div class="carousel-3d" id="hero-carousel-3d">
+                <div class="carousel__cell active" data-label="Featured"
+                    data-description="A beautiful display of natural wonders and serene environments.">
+                    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&q=80&w=800"
+                        alt="Nature Scene">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Trending"
+                    data-description="Majestic creatures in their natural habitats.">
+                    <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&q=80&w=800"
+                        alt="Wildlife Scene">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Latest"
+                    data-description="Exploring the boundaries of modern technology.">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
+                        alt="Tech Scene">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Popular"
+                    data-description="Experience the breathtaking altitude and majestic peaks.">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800"
+                        alt="Majestic Peaks">
+                    <div class="cell-overlay"></div>
+                </div>
+                <div class="carousel__cell" data-label="Discover"
+                    data-description="Feel the calming presence of the deep blue ocean.">
+                    <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&q=80&w=800"
+                        alt="Ocean Breeze">
+                    <div class="cell-overlay"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-copy">
+            <span class="eyebrow">Showcase</span>
+            <h1>Discover Beauty.</h1>
+            <p class="hero-text">A curated collection of breathtaking photography across nature, wildlife, and
+                technology. Explore our gallery to see the world through a new lens.</p>
+            <div class="hero-chips">
+                <span>Nature</span>
+                <span>Wildlife</span>
+                <span>Technology</span>
+            </div>
+        </div>
+
+        <div class="hero-panel">
+            <span class="panel-label" id="hero-label">Featured</span>
+            <h2>Spotlight</h2>
+            <p class="panel-text" id="hero-description">A beautiful display of natural wonders and serene environments.
+            </p>
+            <div class="hero-progress">
+                <span id="hero-progress-bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer reveal">
+        <div class="footer-watermark stagger-in">GALLERY</div>
+        <div class="footer-top">
+            <div class="footer-brand stagger-in">
+                <h2>Gallery.</h2>
+                <p>Curating the world's most breathtaking photography, one frame at a time. Elevate your visual
+                    experience.</p>
+            </div>
+            <div class="footer-links stagger-in">
+                <div class="link-column">
+                    <h3>Explore</h3>
+                    <a href="#">Collection</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Trending</a>
+                    <a href="#">New Arrivals</a>
+                </div>
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="link-column">
+                    <h3>Socials</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Dribbble</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom stagger-in">
+            <p>&copy; 2026 Premium Showcase Gallery. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
